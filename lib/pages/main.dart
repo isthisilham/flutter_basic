@@ -10,7 +10,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Flutter Demo'),
+            centerTitle: true,
+            title: Text(
+              'Flutter Demo',
+              style: TextStyle(color: primaryColor),
+            ),
+            backgroundColor: backgroundColor,
           ),
           body: Image.asset('assets/images/primary.jpg')),
     );
