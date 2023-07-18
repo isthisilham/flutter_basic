@@ -9,14 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Demo'),
-        ),
-        body: Text(
-          'Halo teman teman',
-          style: TextStyle(fontSize: 30, color: primaryColor),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text('Flutter Demo'),
+          ),
+          body: Image.asset('assets/images/primary.jpg')),
     );
   }
 }
