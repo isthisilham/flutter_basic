@@ -84,7 +84,60 @@ class HomePage extends StatelessWidget {
                   width: 224,
                   height: 55,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return Container(
+                            height: 290,
+                            padding: EdgeInsets.symmetric(vertical: 50),
+                            color: whiteColor,
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Update Photo',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      color: primaryColor,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                SizedBox(height: 12),
+                                Text(
+                                  'You are only able to change\nthe picture profile once',
+                                  style:
+                                      TextStyle(fontSize: 18, color: greyColor),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  width: 224,
+                                  height: 55,
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      'Continue',
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                    style: ElevatedButton.styleFrom(
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(16)),
+                                        backgroundColor: orangeColor),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 0,
+                                )
+                              ],
+                            ),
+                          );
+                        },
+                      );
+                    },
                     child: Text(
                       'Update Profile',
                       style: TextStyle(
