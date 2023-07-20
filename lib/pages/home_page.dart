@@ -74,15 +74,29 @@ class HomePage extends StatelessWidget {
                     'assets/images/item6.png',
                     width: 80,
                   ),
-                  Image.asset(
-                    'assets/images/item1.png',
-                    width: 80,
-                  ),
                 ],
               ),
               SizedBox(
                 height: 70,
-              )
+              ),
+              Container(
+                width: 224,
+                height: 55,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Update Profile',
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: primaryColor),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16)),
+                      backgroundColor: whiteColor),
+                ),
+              ),
             ],
           ),
         ),
